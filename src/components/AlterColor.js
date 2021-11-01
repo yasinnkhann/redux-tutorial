@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { changeColor } from '../reducers/theme';
+import { changeColor } from '../features/themeSlice.js';
 
 function AlterColor() {
   const [color, setColor] = useState('');

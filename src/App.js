@@ -1,7 +1,7 @@
+import Profile from './components/Profile.js';
+import Login from './components/Login.js';
+import AlterColor from './components/AlterColor.js';
 import './App.css';
-import Profile from './components/Profile';
-import Login from './components/Login';
-import AlterColor from './components/AlterColor';
 
 function App() {
   return (

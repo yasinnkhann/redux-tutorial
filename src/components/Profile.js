@@ -1,9 +1,11 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import { selectUser } from '../features/userSlice.js';
+import { selectTheme } from '../features/themeSlice.js';
 
 function Profile() {
-  const user = useSelector(state => state.user.value);
-  const themeColor = useSelector(state => state.theme.value);
+  const user = useSelector(selectUser);
+  const themeColor = useSelector(selectTheme);
 
   return (
     <div style={{ color: themeColor }}>
