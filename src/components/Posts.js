@@ -9,12 +9,12 @@ import {
 } from '../features/postsSlice';
 import randomWords from 'random-words';
 
-const generateRandomWords = (minimum, maximum) => {
-	const randomNum = (min, max) => {
+const generateRandomWords = (min, max) => {
+	const randomNum = () => {
 		return Math.floor(Math.random() * (max - min + 1)) + min;
 	};
 
-	return randomWords(randomNum(minimum, maximum)).join(' ');
+	return randomWords(randomNum(min, max)).join(' ');
 };
 
 export default function Posts() {
